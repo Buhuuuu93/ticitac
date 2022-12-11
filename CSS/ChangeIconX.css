@@ -1,0 +1,627 @@
+.ChangeIconX-Container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.OpenChangeIconX-Container {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.ChangeIconX-Item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    max-width: 460px;
+    background: linear-gradient(45deg, #0093E9, #80D0C7);
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 200px var(--Shadow1);
+}
+
+.BtnMenuBackGame {
+    width: 40vw;
+    max-width: 300px;
+    height: 5vh;
+    font-size: 3vh;
+    margin-top: 3vh;
+    border-radius: 20px 0 20px 0;
+    background-color: var(--Bg3);
+    color: var(--Text1);
+}
+
+.TextChangeIconX {
+    grid-column-start: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    height: 60%;
+    margin: 0;
+}
+
+.BtnChangeIconX {
+    height: 9vh;
+    margin: 3%;
+    font-size: 5vh;
+    text-align: center;
+    border-radius: 30px 0 30px 0;
+    border: 5px solid var(--Border1);
+    box-shadow: 0 0 20px var(--Shadow3);
+    color: var(--Text1);
+    background-color: #000000;
+}
+
+.Icon1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Icon2 {
+    font-family: 'Bree Serif', serif;
+}
+
+.Icon3 {
+    font-family: 'Rubik Distressed', cursive;
+}
+
+.Icon4 {
+    font-family: 'Patrick Hand', cursive;
+}
+
+.Icon5 {
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Syne Mono', monospace;
+}
+
+.Icon6 {
+    font-family: 'Rubik Glitch', cursive;
+}
+
+.Icon7 {
+    font-family: 'Lobster', cursive;
+}
+
+.Icon8 {
+    font-family: 'Pacifico', cursive;
+}
+
+.Icon9 {
+    font-family: 'Rubik Microbe', cursive;
+}
+
+.Icon10 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+
+
+.ChangeIconO-Container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.OpenChangeIconO-Container {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.ChangeIconO-Item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    max-width: 460px;
+    background: linear-gradient(45deg, #0093E9, #80D0C7);
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 200px var(--Shadow1);
+}
+
+.BtnMenuBackGame {
+    width: 40vw;
+    max-width: 300px;
+    height: 5vh;
+    font-size: 3vh;
+    margin-top: 3vh;
+    border-radius: 20px 0 20px 0;
+    background-color: var(--Bg3);
+    color: var(--Text1);
+}
+
+.TextChangeIconO {
+    grid-column-start: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    height: 60%;
+    margin: 0;
+}
+
+.BtnChangeIconO {
+    height: 9vh;
+    margin: 3%;
+    font-size: 5vh;
+    text-align: center;
+    border-radius: 30px 0 30px 0;
+    border: 5px solid var(--Border1);
+    box-shadow: 0 0 20px var(--Shadow3);
+    color: var(--Text1);
+    background-color: #000000;
+}
+
+
+
+
+
+
+.IconXColor-Container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.OpenIconXColor-Container {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.IconXColor-Item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    max-width: 460px;
+    background: linear-gradient(45deg, #0093E9, #80D0C7);
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 200px var(--Shadow1);
+}
+
+.BtnMenuBackGame {
+    width: 40vw;
+    max-width: 300px;
+    height: 5vh;
+    font-size: 5vh;
+    margin-top: 3vh;
+    border-radius: 20px 0 20px 0;
+    background-color: var(--Bg3);
+    color: var(--Text1);
+}
+
+.TextChangeColorIconX {
+    grid-column-start: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    height: 60%;
+    margin: 0;
+}
+
+.BtnChangeColorIconX {
+    height: 8vh;
+    margin: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 30px 0 30px 0;
+    border: 5px solid var(--Border1);
+    box-shadow: 0 0 20px var(--Shadow3);
+}
+
+.ButtonColorX {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+.IconX1 {
+    background: linear-gradient(45deg, rgb(2, 255, 2), rgb(29, 177, 0), rgb(0, 80, 13));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(30, 255, 0);
+}
+.IconX2 {
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 174, 0), rgb(0, 47, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(255, 0, 0);
+}
+.IconX3 {
+    background: linear-gradient(45deg, #1407f0, #83e457, #00d4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(255, 0, 0);
+}
+.IconX4 {
+    background: linear-gradient(45deg, #0036ff, #9cfcff, #00cff9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(255, 255, 255);
+}
+.IconX5 {
+    background: linear-gradient(45deg, #ff00fb, #0059ff, #f90000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(255, 0, 0);
+}
+.IconX6 {
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 174, 0), rgb(0, 47, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(255, 0, 0);
+}
+.IconX7 {
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 174, 0), rgb(0, 47, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(255, 0, 0);
+}
+.IconX8 {
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 174, 0), rgb(0, 47, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(255, 0, 0);
+}
+.IconX9 {
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 174, 0), rgb(0, 47, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(255, 0, 0);
+}
+.IconX10 {
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(255, 174, 0), rgb(0, 47, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 150px  rgb(255, 0, 0);
+}
+
+
+.IconOColor-Container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.OpenIconOColor-Container {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.IconOColor-Item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    max-width: 460px;
+    background: linear-gradient(45deg, #0093E9, #80D0C7);
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 200px var(--Shadow1);
+}
+
+.StandartColorO {
+    color: blue;
+}
+
+.StandartColorX {
+    color: red;
+}
+
+.BtnMenuBackGame {
+    width: 40vw;
+    max-width: 300px;
+    height: 5vh;
+    font-size: 3vh;
+    margin-top: 3vh;
+    border-radius: 20px 0 20px 0;
+    background-color: var(--Bg3);
+    color: var(--Text1);
+}
+
+.TextChangeColorIconO {
+    grid-column-start: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 4vh;
+    height: 60%;
+    margin: 0;
+}
+
+.BtnChangeColorIconO {
+    height: 8vh;
+    margin: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 30px 0 30px 0;
+    border: 5px solid var(--Border1);
+    box-shadow: 0 0 20px var(--Shadow3);
+}
+
+.ButtonColorO {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+
+.Bg1 {
+    background: linear-gradient(45deg, #0084d1, #80D0C7);
+}
+
+.Bg12 {
+    --Border1: #080808;
+    --Border3: #0084d1;
+    --Border4: #80D0C7;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #0084d1;
+    --Bg3: #080808;
+    --Bg4: #80D0C7;
+
+    --Shadow1: #0084d1;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg2 {
+    background: linear-gradient(45deg, #008f00, #80ff80);
+}
+
+.Bg22 {
+    --Border1: #080808;
+    --Border3: #008f00;
+    --Border4: #80ff80;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #008f00;
+    --Bg3: #080808;
+    --Bg4: #80ff80;
+
+    --Shadow1: #008f00;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg3 {
+    background: linear-gradient(45deg, #b35a00, #ffc080);
+}
+
+.Bg32 {
+    --Border1: #080808;
+    --Border3: #b35a00;
+    --Border4: #ffc080;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #b35a00;
+    --Bg3: #080808;
+    --Bg4: #ffc080;
+
+    --Shadow1: #b35a00;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg4 {
+    background: linear-gradient(45deg, #2e059e, #a584ff);
+}
+
+.Bg42 {
+    --Border1: #080808;
+    --Border3: #2e059e;
+    --Border4: #a584ff;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #2e059e;
+    --Bg3: #080808;
+    --Bg4: #a584ff;
+
+    --Shadow1: #2e059e;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg5 {
+    background: linear-gradient(45deg, #006b6b, #80ffff);
+}
+
+.Bg52 {
+    --Border1: #080808;
+    --Border3: #006b6b;
+    --Border4: #80ffff;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #006b6b;
+    --Bg3: #080808;
+    --Bg4: #80ffff;
+
+    --Shadow1: #006b6b;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg6 {
+    background: linear-gradient(45deg, #79006b, #ff80f0);
+}
+
+.Bg62 {
+    --Border1: #080808;
+    --Border3: #79006b;
+    --Border4: #ff80f0;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #79006b;
+    --Bg3: #080808;
+    --Bg4: #ff80f0;
+
+    --Shadow1: #79006b;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg7 {
+    background: linear-gradient(45deg, #b38a00, #ffe280);
+}
+
+.Bg72 {
+    --Border1: #080808;
+    --Border3: #b38a00;
+    --Border4: #ffe280;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #b38a00;
+    --Bg3: #080808;
+    --Bg4: #ffe280;
+
+    --Shadow1: #b38a00;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg8 {
+    background: linear-gradient(45deg, #99b300, #edff80);
+}
+
+.Bg82 {
+    --Border1: #080808;
+    --Border3: #99b300;
+    --Border4: #edff80;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #99b300;
+    --Bg3: #080808;
+    --Bg4: #edff80;
+
+    --Shadow1: #99b300;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg9 {
+    background: linear-gradient(45deg, #000000, #ffffff);
+}
+
+.Bg92 {
+    --Border1: #080808;
+    --Border3: #000000;
+    --Border4: #ffffff;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #000000;
+    --Bg3: #080808;
+    --Bg4: #ffffff;
+
+    --Shadow1: #000000;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg10 {
+    background: linear-gradient(45deg, #b30000, #ff8080);
+}
+
+.Bg102 {
+    --Border1: #080808;
+    --Border3: #b30000;
+    --Border4: #ff8080;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #b30000;
+    --Bg3: #080808;
+    --Bg4: #ff8080;
+
+    --Shadow1: #b30000;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}

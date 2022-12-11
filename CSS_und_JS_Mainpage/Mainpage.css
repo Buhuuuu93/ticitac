@@ -1,0 +1,135 @@
+:root {
+    --Border1: #080808;
+    --Border3: #0084d1;
+    --Border4: #80D0C7;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #0084d1;
+    --Bg3: #080808;
+    --Bg4: #80D0C7;
+
+    --Shadow1: #0084d1;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, #0093E9, #80D0C7);
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: transparent;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    font-size: 3vh;
+}
+
+.MenuList-Container {
+    width: 15%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.MenuList-Item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 18vw;
+    background-color: var(--Bg4);
+    border-radius: 0 20px 20px 20px;
+}
+
+.Btn-MenuList {
+    margin: 5px;
+    border-radius: 0 20px 20px 20px;
+    width: 25vw;
+    height: 8vh;
+}
+
+main {
+    width: 90vw;
+    height: 50vh;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: var(--Text1);
+    font-size: 4vh;
+    margin-top: 15vh;
+    border: 5px double var(--Border3);
+    border-radius: 20px 5px 20px 5px;
+    box-shadow: 0 0 30px black;
+}
+
+p {
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--Bg1);
+    width: 70vw;
+    height: 30vh;
+    max-width: 300px;
+    margin: 0 20px 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 5px 20px 5px;
+    border: var(--Border3) solid 5px;
+    box-shadow: 0 0 20px var(--Shadow1);
+    pointer-events: fill;
+    text-decoration: none;
+}
+
+a {
+    background-color: transparent;
+    color: var(--Text1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: fill;
+    text-decoration: none;
+    font-size: 3vh;
+}
+
+.a-Animation {
+    animation: getBig 2s;
+}
+
+@keyframes getBig {
+    0% {
+        width: 70vw;
+        height: 30vh;
+    }
+
+    50% {
+        width: 90vw;
+        height: 120vh;
+        rotate: 360deg;
+        box-shadow: 0 0 2000px var(--Shadow1);
+    }
+}
+
+.ContentInfo {
+    margin-top: 21vh;
+}

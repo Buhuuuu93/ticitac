@@ -1,0 +1,235 @@
+/*---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Alles um das Spielfeld herum----------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+
+:root {
+    --Border1: #080808;
+    --Border3: #0084d1;
+    --Border4: #80D0C7;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #0084d1;
+    --Bg3: #080808;
+    --Bg4: #80D0C7;
+
+    --Shadow1: #0084d1;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, #0093E9, #80D0C7);
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------Header----------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------Menu-------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+.MenuList-Container {
+    width: 15%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuList-Item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 18vw;
+    max-width: 100px;
+    background-color: var(--Bg4);
+    border-radius: 0 20px 20px 20px;
+}
+
+.Btn-MenuList {
+    margin: 5px;
+    border-radius: 0 20px 20px 20px;
+    width: 25vw;
+    height: 8vh;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------Titel und  IMG-----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+.Ticitac {
+    width: 60%;
+    text-align: center;
+    font-size: 4vh;
+}
+
+.HeaderIMG {
+    width: 15%;
+    margin-right: 5%;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------Main-Bereich-----------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------Spielername Display---------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+.PlayerDisplay-Container {
+    height: 8vh;
+    width: 90vw;
+    max-width: 400px;
+    background-color: var(--Bg3);
+    border-radius: 20px 0 20px 0;
+    margin-bottom: 2vh;
+    box-shadow: 0 0 25px;
+    border: 5px solid var(--Border4);
+}
+
+.PlayerDisplay {
+    height: 100%;
+    width: 100%;
+    background-color: var(--Bg3);
+    border-radius: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------Resultat Anzeige-Bereich------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+.RoundResult-Container {
+    height: 7.5vh;
+    width: 90vw;
+    max-width: 400px;
+    background-color: var(--Bg3);
+    margin-bottom: 3vh;
+    border-radius: 0 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 25px;
+    border: 5px solid var(--Border4);
+}
+
+.RoundResult-Item1 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+}
+
+.RoundResult-Item-Number1 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    color: var(--Text1);
+    border: solid var(--Border4);
+    border-radius: 0 50% 50% 0;
+    border-width: 0 5px 0 0;
+}
+
+.RoundResult-Item2 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    color: var(--Text1);
+}
+
+.RoundResult-Item-Number2 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    color: var(--Text1);
+    border: solid var(--Border4);
+    border-radius: 50% 0 0 50%;
+    border-width: 0 0 0 5px;
+}
+
+.RoundResult-Item3 {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+/*-------------------------------Reset Spielfeld and Refresh Spiel-Button----------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
+
+.ResetPlayField-Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ResetPlayField {
+    width: 40vw;
+    height: 5vh;
+    margin-right: 1.5vh;
+    margin-left: 1.5vh;
+    margin-top: 3vh;
+    padding: 10px;
+    flex-flow: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    color: var(--Text1);
+    background-color: var(--Bg1);
+}
+
+.ROUND {
+    border-radius: 20px 0 20px 0;
+    max-width: 130px;
+}
+
+.GAME {
+    border-radius: 0 20px 0 20px;
+    max-width: 130px;
+}
