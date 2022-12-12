@@ -24,7 +24,7 @@
     align-items: center;
     width: 90%;
     height: 70%;
-    max-width: 460px;
+    max-width: 400px;
     background: linear-gradient(45deg, #0093E9, #80D0C7);
     border-radius: 20px 0 20px 0;
     box-shadow: 0 0 200px var(--Shadow1);
@@ -132,7 +132,7 @@
     align-items: center;
     width: 90%;
     height: 70%;
-    max-width: 460px;
+    max-width: 400px;
     background: linear-gradient(45deg, #0093E9, #80D0C7);
     border-radius: 20px 0 20px 0;
     box-shadow: 0 0 200px var(--Shadow1);
@@ -202,7 +202,7 @@
     align-items: center;
     width: 90%;
     height: 70%;
-    max-width: 460px;
+    max-width: 400px;
     background: linear-gradient(45deg, #0093E9, #80D0C7);
     border-radius: 20px 0 20px 0;
     box-shadow: 0 0 200px var(--Shadow1);
@@ -231,7 +231,7 @@
 
 .BtnChangeColorIconX {
     height: 8vh;
-    margin: 6%;
+    margin: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -348,7 +348,7 @@
     align-items: center;
     width: 90%;
     height: 70%;
-    max-width: 460px;
+    max-width: 400px;
     background: linear-gradient(45deg, #0093E9, #80D0C7);
     border-radius: 20px 0 20px 0;
     box-shadow: 0 0 200px var(--Shadow1);
@@ -386,7 +386,7 @@
 
 .BtnChangeColorIconO {
     height: 8vh;
-    margin: 6%;
+    margin: 3%;
     display: flex;
     justify-content: center;
     align-items: center;

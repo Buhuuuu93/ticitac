@@ -24,7 +24,7 @@
     text-align: center;
     width: 90%;
     height: 70%;
-    max-width: 460px;
+    max-width: 400px;
     max-height: 900px;
     background: linear-gradient(45deg, #0093E9, #80D0C7);
     border-radius: 20px 5px 20px 5px;
@@ -41,6 +41,9 @@
     width: 30vw;
     max-width: 100px;
     height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 5vh;
     font-weight: bold;
     border-radius: 20px 5px 20px 5px;
@@ -233,14 +236,14 @@ margin-left: 3vw;
 
 
 .StartDialog-Flex-Item3 {
-    width: 80%;
-    height: 9vh;
-    max-width: 270px;
+    width: 60%;
+    height: 10vh;
+    max-width: 80%;
     margin-bottom: 5vh;
     border-radius: 10px 50% 50% 10px;
     border-width: 0 20px 0 0;
     border-color: rgb(0, 255, 13);
-    font-size: 4vh;
+    font-size: 3vh;
     font-weight: bold;
     margin: 10vh 0 1vh 0;
     background-color: var(--Bg1);
@@ -275,7 +278,7 @@ margin-left: 3vw;
 
 .LinkForBackStart {
     width: 40vw;
-    max-width: 300px;
+    max-width: 250px;
     height: 5vh;
     font-size: 3vh;
     margin-top: 3vh;

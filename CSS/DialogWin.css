@@ -23,7 +23,7 @@
     align-items: center;
     width: 90%;
     height: 70%;
-    max-width: 460px;
+    max-width: 400px;
     background: linear-gradient(45deg, #0093E9, #80D0C7);
     border-radius: 20px 0 20px 0;
     box-shadow: 0 0 200px var(--Shadow1);
@@ -43,9 +43,9 @@
 }
 
 .WinDialog-Flex-Item2 {
-    width: 70vw;
-    height: 70vw;
-    max-width: 80%;
+    width: 70%;
+    height: 60vw;
+    max-width: 280px;
     display: flex;
     flex-direction: row;
     justify-content: center;
