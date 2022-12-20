@@ -74,7 +74,6 @@ span {
 .ChooseIconAndColor {
     width: 20vw;
     height: 4vh;
-    margin: 1vw;
     font-weight: bold;
     font-size: 2vh;
     background-color: var(--Bg4);
