@@ -72,9 +72,9 @@ span {
 }
 
 .ChooseIconAndColor {
-    width: 25vw;
+    width: 20vw;
     height: 4vh;
-    margin: 2vw;
+    margin: 1vw;
     font-weight: bold;
     font-size: 2vh;
     background-color: var(--Bg4);
