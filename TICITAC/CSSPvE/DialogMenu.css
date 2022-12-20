@@ -1,0 +1,412 @@
+.Menu-Container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.OpenMenu-Container {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.Menu-Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    max-width: 400px;
+    max-height: 900px;
+    background: linear-gradient(45deg, #0093E9, #80D0C7);
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 200px var(--Shadow1);
+}
+
+.BtnMenu {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 90%;
+    margin: 3%;
+    border: solid var(--Border3);
+    border-width: 0 5px 5px 0;
+    border-radius: 20px 0 20px 0;
+    font-size: 3vh;
+    background-color: var(--Bg3);
+    color: var(--Text1);
+    box-shadow: 0 0 20px var(--Shadow3);
+}
+
+.LinkMenu {
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 90%;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    pointer-events: auto;
+    border: solid var(--Border3);
+    border-width: 0 5px 5px 0;
+    border-radius: 20px 0 20px 0;
+    font-size: 3vh;
+    background-color: var(--Bg3);
+    color: var(--Text1);
+    box-shadow: 0 0 20px var(--Shadow3);
+    pointer-events: none;
+}
+
+.LinkMenuActiv {
+    pointer-events: auto;
+}
+
+
+
+
+.BgColor-Container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.OpenBgColor-Container {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.BgColor-Item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    max-width: 400px;
+    max-height: 900px;
+    background: linear-gradient(45deg, #0093E9, #80D0C7);
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 200px var(--Shadow1);
+}
+
+.BtnMenuBackGame {
+    width: 40vw;
+    max-width: 300px;
+    height: 5vh;
+    font-size: 3vh;
+    margin-top: 3vh;
+    border-radius: 20px 0 20px 0;
+    background-color: var(--Bg3);
+    color: var(--Text1);
+}
+
+.TextChangeColorBg {
+    grid-column-start: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    height: 60%;
+    margin: 0;
+}
+
+.BtnChangeColorBg {
+    height: 60%;
+    margin: 10%;
+    border-radius: 30px 0 30px 0;
+    border: 5px solid var(--Border1);
+    box-shadow: 0 0 20px var(--Shadow3);
+}
+
+.ChooseIconOrColor-Container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.openChooseIconOrColor-Container {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.ChooseIconOrColor-Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 70%;
+    max-width: 400px;
+    max-height: 900px;
+    background: linear-gradient(45deg, #0093E9, #80D0C7);
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 0 200px var(--Shadow1);
+}
+
+.BtnMenuChooseIconOrColor {
+    width: 90%;
+    height: 20vh;
+    margin: 7%;
+    border: solid var(--Border3);
+    border-width: 0 5px 5px 0;
+    border-radius: 20px 0 20px 0;
+    font-size: 3vh;
+    background-color: var(--Bg3);
+    color: var(--Text1);
+    box-shadow: 0 0 20px var(--Shadow3);
+}
+
+.Bg1 {
+    background: linear-gradient(45deg, #0084d1, #80D0C7);
+}
+
+.Bg12 {
+    --Border1: #080808;
+    --Border3: #0084d1;
+    --Border4: #80D0C7;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #0084d1;
+    --Bg3: #080808;
+    --Bg4: #80D0C7;
+
+    --Shadow1: #0084d1;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg2 {
+    background: linear-gradient(45deg, #008f00, #80ff80);
+}
+
+.Bg22 {
+    --Border1: #080808;
+    --Border3: #008f00;
+    --Border4: #80ff80;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #008f00;
+    --Bg3: #080808;
+    --Bg4: #80ff80;
+
+    --Shadow1: #008f00;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg3 {
+    background: linear-gradient(45deg, #b35a00, #ffc080);
+}
+
+.Bg32 {
+    --Border1: #080808;
+    --Border3: #b35a00;
+    --Border4: #ffc080;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #b35a00;
+    --Bg3: #080808;
+    --Bg4: #ffc080;
+
+    --Shadow1: #b35a00;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg4 {
+    background: linear-gradient(45deg, #2e059e, #a584ff);
+}
+
+.Bg42 {
+    --Border1: #080808;
+    --Border3: #2e059e;
+    --Border4: #a584ff;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #2e059e;
+    --Bg3: #080808;
+    --Bg4: #a584ff;
+
+    --Shadow1: #2e059e;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg5 {
+    background: linear-gradient(45deg, #006b6b, #80ffff);
+}
+
+.Bg52 {
+    --Border1: #080808;
+    --Border3: #006b6b;
+    --Border4: #80ffff;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #006b6b;
+    --Bg3: #080808;
+    --Bg4: #80ffff;
+
+    --Shadow1: #006b6b;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg6 {
+    background: linear-gradient(45deg, #79006b, #ff80f0);
+}
+
+.Bg62 {
+    --Border1: #080808;
+    --Border3: #79006b;
+    --Border4: #ff80f0;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #79006b;
+    --Bg3: #080808;
+    --Bg4: #ff80f0;
+
+    --Shadow1: #79006b;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg7 {
+    background: linear-gradient(45deg, #b38a00, #ffe280);
+}
+
+.Bg72 {
+    --Border1: #080808;
+    --Border3: #b38a00;
+    --Border4: #ffe280;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #b38a00;
+    --Bg3: #080808;
+    --Bg4: #ffe280;
+
+    --Shadow1: #b38a00;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg8 {
+    background: linear-gradient(45deg, #99b300, #edff80);
+}
+
+.Bg82 {
+    --Border1: #080808;
+    --Border3: #99b300;
+    --Border4: #edff80;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #99b300;
+    --Bg3: #080808;
+    --Bg4: #edff80;
+
+    --Shadow1: #99b300;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg9 {
+    background: linear-gradient(45deg, #000000, #ffffff);
+}
+
+.Bg92 {
+    --Border1: #080808;
+    --Border3: #000000;
+    --Border4: #ffffff;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #000000;
+    --Bg3: #080808;
+    --Bg4: #ffffff;
+
+    --Shadow1: #000000;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.Bg10 {
+    background: linear-gradient(45deg, #b30000, #ff8080);
+}
+
+.Bg102 {
+    --Border1: #080808;
+    --Border3: #b30000;
+    --Border4: #ff8080;
+    --Border5: #eeff00;
+
+    --Bg1: #080808;
+    --Bg2: #b30000;
+    --Bg3: #080808;
+    --Bg4: #ff8080;
+
+    --Shadow1: #b30000;
+    --Shadow3: #000000;
+
+    --Text1: aliceblue;
+    --Text2: #000000;
+}
+
+.BacktoGameMenu {
+    width: 40vw;
+    max-width: 300px;
+    height: 5vh;
+    font-size: 3vh;
+    margin-top: 3vh;
+    border-radius: 20px 0 20px 0;
+    background-color: var(--Bg3);
+    color: var(--Text1);
+}
+

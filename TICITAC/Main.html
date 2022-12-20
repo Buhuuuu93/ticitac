@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////Head-Bereich Links with Google-Fonts////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--/////////////////////////Head-Bereich Stylesheets///////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <link rel="stylesheet" href="CSS/style_Game.css">
+    <link rel="stylesheet" href="CSS/PlayIconColors.css">
+    <link rel="stylesheet" href="CSS/DialogWin.css">
+    <link rel="stylesheet" href="CSS/DialogStart.css">
+    <link rel="stylesheet" href="CSS/Style_Game_Around.css">
+    <link rel="stylesheet" href="CSS/DialogMenu.css">
+    <link rel="stylesheet" href="CSS/ChangeIconX.css">
+
+</head>
+
+<body id="bodyCol">
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////Header-Bereich mit Navigation///////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <header>
+        <nav class="MenuList-Container">
+            <button id="MenuListiD" onclick="OpenMenu()" class="MenuList-Item">
+                Menu
+            </button>
+        </nav>
+
+        <p class="Ticitac">TiciTac!</p>
+
+        <div class="HeaderIMG"></div>
+
+    </header>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--/////////////////////////////////Gaming-Area All////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <main>
+
+        <!--////////////////////Gaming-Area Playername Display//////////////////////////////-->
+
+        <div id="PlayerDisplay-Container" class="PlayerDisplay-Container">
+            <div class="PlayerDisplay" id="PlayerDisplay">
+
+            </div>
+        </div>
+
+        <!--////////////////////Gaming-Area Result Display/////////////////////////////////-->
+
+        <div id="RoundResultContainer" class="RoundResult-Container">
+            <div id="RoundResult-Item1" class="RoundResult-Item1">
+                X
+            </div>
+            <div id="RoundResult-Item-Number1" class="RoundResult-Item-Number1"></div>
+            <div class="RoundResult-Item2">
+                vs
+            </div>
+            <div id="RoundResult-Item-Number2" class="RoundResult-Item-Number2"></div>
+            <div id="RoundResult-Item3" class="RoundResult-Item3">
+                O
+            </div>
+
+        </div>
+
+        <!--/////////////////////////Gaming-Area TicTacToe/////////////////////////////////-->
+
+        <div role="main" id="Game-Container" class="Game-Container">
+
+            <button id="PlayBtn1" onclick="SetIcon1()" class="Game-Item Game-Item-Btn-1">
+                <strong id="IconColor1" class="Game-Item-Icon"></strong>
+            </button>
+            <button id="PlayBtn2" onclick="SetIcon2()" class="Game-Item Game-Item-Btn-2">
+                <strong id="IconColor2" class="Game-Item-Icon"></strong>
+            </button>
+            <button id="PlayBtn3" onclick="SetIcon3()" class="Game-Item Game-Item-Btn-3">
+                <strong id="IconColor3" class="Game-Item-Icon"></strong>
+            </button>
+
+            <button id="PlayBtn4" onclick="SetIcon4()" class="Game-Item Game-Item-Btn-4">
+                <strong id="IconColor4" class="Game-Item-Icon"></strong>
+            </button>
+            <button id="PlayBtn5" onclick="SetIcon5()" class="Game-Item Game-Item-Btn-5">
+                <strong id="IconColor5" class="Game-Item-Icon"></strong>
+            </button>
+            <button id="PlayBtn6" onclick="SetIcon6()" class="Game-Item Game-Item-Btn-6">
+                <strong id="IconColor6" class="Game-Item-Icon"></strong>
+            </button>
+
+            <button id="PlayBtn7" onclick="SetIcon7()" class="Game-Item Game-Item-Btn-7">
+                <strong id="IconColor7" class="Game-Item-Icon"></strong>
+            </button>
+            <button id="PlayBtn8" onclick="SetIcon8()" class="Game-Item Game-Item-Btn-8">
+                <strong id="IconColor8" class="Game-Item-Icon"></strong>
+            </button>
+            <button id="PlayBtn9" onclick="SetIcon9()" class="Game-Item Game-Item-Btn-9">
+                <strong id="IconColor9" class="Game-Item-Icon"></strong>
+            </button>
+
+        </div>
+
+        <div role="button" class="ResetPlayField-Container">
+            <button onclick="ResetPlayField()" class="ResetPlayField ROUND">Reset playfield</button>
+            <button onclick="ResetPlayGame()" class="ResetPlayField GAME">Reset complet</button>
+        </div>
+
+    </main>
+
+    
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--/////////////////////////////////The Start Dialog///////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <div id="CloseDialogStartContainer" role="dialog" class="DialogStart-Container">
+
+        <div id="ChangeBgStartDialog" role="group" class="DialogStart-Item">
+
+            <div class="StartDialog-Flex-Item1">
+                <p class="StartDialog-Flex-Item1-Text1"> <span>Add your Playernames</span> <br> and choose your
+                    individual icon</p>
+            </div>
+
+            <div role="form" id="StartDialogWhichPlayer" class="StartDialog-Flex-Item2">
+
+                <button id="ChangeitIcon" onclick="OpenChooseXIcon()" class="ChooseIconAndColor Border-Right">Icon</button>
+                <label id="LabelX" class="LabelX" for="NamePlayerX">X</label>
+                <button id="ChangeitColor" onclick="ChangeColorIconX()" class="ChooseIconAndColor Border-Left">Color</button>
+                <input class="InputPlayername" id="NamePlayerX" placeholder="Name player X" type="text">
+
+                <button id="ChangeitIcon2" onclick="OpenChooseOIcon()" class="ChooseIconAndColor Border-Right">Icon</button>
+                <label id="LabelO" class="LabelO" for="NamePlayerO">O</label>
+                <button id="ChangeitColor2" onclick="ChangeColorIconO()" class="ChooseIconAndColor Border-Left">Color</button>
+                <input class="InputPlayername" id="NamePlayerO" placeholder="Name player O" type="text">
+
+            </div>
+            <button id="StartDialogFlexItem3" onclick="StartGame()" class="StartDialog-Flex-Item3">
+                Let Play!
+            </button>
+
+        </div>
+        <a href="/index.html" id="LinkForBackStart" class="LinkForBackStart">Back</a>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--///////////////////////////////////The Win Dialog///////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <div id="OpenDialogWinContainer" role="dialog" class="DialogWin-Container">
+
+        <div id="BgColorDialogWinContainer" role="group" class="DialogWin-Item">
+
+            <div id="WinOrDrawText" class="WinDialog-Flex-Item1">
+
+            </div>
+
+            <div id="WinDialogWhichPlayer" class="WinDialog-Flex-Item2">
+
+
+
+            </div>
+            <button id="WinDialogFlexItem3" onclick="FreshGame()" class="WinDialog-Flex-Item3">
+                Revenge!
+            </button>
+
+        </div>
+        <a href="/index.html" id="LinkForBack" class="LinkForBack">Back</a>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--//////////////////////////////-------Menu--------///////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div id="MenuContainer" role="dialog" class="Menu-Container">
+
+        <div id="BgColorMenuContainer" class="Menu-Item">
+
+            <button id="BtnMenu" onclick="ChangeBgMenu()" class="BtnMenu">Playground Color</button>
+            <button id="BtnMenu2" onclick="ChooseIconToChange()" class="BtnMenu"> Change Icon</button>
+
+            <a id="LinkMnuiD" href="/index.html" class="LinkMenu">Back to mainpage</a>
+
+        </div>
+        <button onclick="BackToGame()" class="BtnMenuBackGame">Back</button>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////-------Choose Icon to change X or O--------/////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div id="ChooseIconToChangeContainer" role="dialog" class="ChooseIconToChange-Container">
+
+        <div id="ChooseIconToChangeContainer2" class="ChooseIconToChange-Item">
+
+            <button id="BtnXorO1" onclick="ChooseIconToChangeX()" class="ChooseIconToChangeBtnMenu">X</button>
+            <button id="BtnXorO2" onclick="ChooseIconToChangeO()" class="ChooseIconToChangeBtnMenu">O</button>
+
+        </div>
+        <button onclick="BacktoGameMenu()()" class="BtnMenuBackGame">Back</button>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--//////////////////-------Choose Icon or Color to change--------/////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div id="MenuChooseIconOrColorContainer" role="dialog" class="ChooseIconOrColor-Container">
+
+        <div id="ChooseIconOrColorMenuContainerX" class="ChooseIconOrColor-Item">
+
+            <button id="BtnChooseIconOrColor1" onclick="ChooseIconOrColor1()" class="BtnMenuChooseIconOrColor">Change Icon</button>
+            <button id="BtnChooseIconOrColor2" onclick="ChooseIconOrColor2()" class="BtnMenuChooseIconOrColor"> Change Color</button>
+
+        </div>
+        <button onclick="BacktoGameMenu()" class="BtnMenuBackGame">Back</button>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////Menu for Change Background Color////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div id="BgColorContainer" role="dialog" class="BgColor-Container">
+
+        <div id="BgColorBgColorContainer" class="BgColor-Item">
+
+            <p class="TextChangeColorBg">Choose your Color</p>
+
+            <button onclick="ChangeColorBG1()" class="BtnChangeColorBg Bg1"></button>
+            <button onclick="ChangeColorBG2()" class="BtnChangeColorBg Bg2"></button>
+            <button onclick="ChangeColorBG3()" class="BtnChangeColorBg Bg3"></button>
+            <button onclick="ChangeColorBG4()" class="BtnChangeColorBg Bg4"></button>
+            <button onclick="ChangeColorBG5()" class="BtnChangeColorBg Bg5"></button>
+            <button onclick="ChangeColorBG6()" class="BtnChangeColorBg Bg6"></button>
+            <button onclick="ChangeColorBG7()" class="BtnChangeColorBg Bg7"></button>
+            <button onclick="ChangeColorBG8()" class="BtnChangeColorBg Bg8"></button>
+            <button onclick="ChangeColorBG9()" class="BtnChangeColorBg Bg9"></button>
+            <button onclick="ChangeColorBG10()" class="BtnChangeColorBg Bg10"></button>
+
+        </div>
+
+        <button onclick="BacktoGameMenu()" id="BacktoGameMenu" class="BacktoGameMenu">Back</button>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--//////////////////////////////Change the Icon !X!///////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <div id="ChangeIconXContainer" role="dialog" class="ChangeIconX-Container">
+
+        <div id="NewIconX" class="ChangeIconX-Item">
+
+            <p class="TextChangeIconX">Choose your Icon</p>
+
+            <button onclick="ChangeIconX1()" class="BtnChangeIconX Icon1">X</button>
+            <button onclick="ChangeIconX2()" class="BtnChangeIconX Icon2">X</button>
+            <button onclick="ChangeIconX3()" class="BtnChangeIconX Icon3">X</button>
+            <button onclick="ChangeIconX4()" class="BtnChangeIconX Icon4">X</button>
+            <button onclick="ChangeIconX5()" class="BtnChangeIconX Icon5">X</button>
+            <button onclick="ChangeIconX6()" class="BtnChangeIconX Icon6">X</button>
+            <button onclick="ChangeIconX7()" class="BtnChangeIconX Icon7">X</button>
+            <button onclick="ChangeIconX8()" class="BtnChangeIconX Icon8">X</button>
+            <button onclick="ChangeIconX9()" class="BtnChangeIconX Icon9">X</button>
+            <button onclick="ChangeIconX10()" class="BtnChangeIconX Icon10">X</button>
+
+        </div>
+
+        <button onclick="BacktoGameMenuX()" id="BacktoGameMenu" class="BacktoGameMenu">Back</button>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--//////////////////////////Color Menu for Item !X!///////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div id="IconXColorContainer" role="dialog" class="IconXColor-Container">
+
+        <div id="IconXColorItem" class="IconXColor-Item">
+
+            <p class="TextChangeColorIconX">Choose your Color</p>
+
+            <button onclick="ChangeColorIconX1()" class="BtnChangeColorIconX">
+                <p id="IconX1" class="ButtonColorX IconX1">X</p>
+            </button>
+            <button onclick="ChangeColorIconX2()" class="BtnChangeColorIconX">
+                <p id="IconX2" class="ButtonColorX IconX2">X</p>
+            </button>
+            <button onclick="ChangeColorIconX3()" class="BtnChangeColorIconX">
+                <p id="IconX3" class="ButtonColorX IconX3">X</p>
+            </button>
+            <button onclick="ChangeColorIconX4()" class="BtnChangeColorIconX">
+                <p id="IconX4" class="ButtonColorX IconX4">X</p>
+            </button>
+            <button onclick="ChangeColorIconX5()" class="BtnChangeColorIconX">
+                <p id="IconX5" class="ButtonColorX IconX5">X</p>
+            </button>
+            <button onclick="ChangeColorIconX6()" class="BtnChangeColorIconX">
+                <p id="IconX6" class="ButtonColorX IconX6">X</p>
+            </button>
+            <button onclick="ChangeColorIconX7()" class="BtnChangeColorIconX">
+                <p id="IconX7" class="ButtonColorX IconX7">X</p>
+            </button>
+            <button onclick="ChangeColorIconX8()" class="BtnChangeColorIconX">
+                <p id="IconX8" class="ButtonColorX IconX8">X</p>
+            </button>
+            <button onclick="ChangeColorIconX9()" class="BtnChangeColorIconX">
+                <p id="IconX9" class="ButtonColorX IconX9">X</p>
+            </button>
+            <button onclick="ChangeColorIconX10()" class="BtnChangeColorIconX">
+                <p id="IconX10" class="ButtonColorX IconX10">X</p>
+            </button>
+
+        </div>
+
+        <button onclick="BacktoGameMenuIconX()" id="BacktoGameMenu" class="BacktoGameMenu">Back</button>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--//////////////////////////////Change the Icon !O!///////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div id="ChangeIconOContainer" role="dialog" class="ChangeIconO-Container">
+
+        <div id="NewIconO" class="ChangeIconO-Item">
+
+            <p class="TextChangeIconO">Choose your Icon</p>
+
+            <button onclick="ChangeIconO1()" class="BtnChangeIconO Icon1">O</button>
+            <button onclick="ChangeIconO2()" class="BtnChangeIconO Icon2">O</button>
+            <button onclick="ChangeIconO3()" class="BtnChangeIconO Icon3">O</button>
+            <button onclick="ChangeIconO4()" class="BtnChangeIconO Icon4">O</button>
+            <button onclick="ChangeIconO5()" class="BtnChangeIconO Icon5">O</button>
+            <button onclick="ChangeIconO6()" class="BtnChangeIconO Icon6">O</button>
+            <button onclick="ChangeIconO7()" class="BtnChangeIconO Icon7">O</button>
+            <button onclick="ChangeIconO8()" class="BtnChangeIconO Icon8">O</button>
+            <button onclick="ChangeIconO9()" class="BtnChangeIconO Icon9">O</button>
+            <button onclick="ChangeIconO10()" class="BtnChangeIconO Icon10">O</button>
+
+        </div>
+
+        <button onclick="BacktoGameMenuO()" id="BacktoGameMenu" class="BacktoGameMenu">Back</button>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////Color Menu for Item !O!/////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div id="IconOColorContainer" role="dialog" class="IconOColor-Container">
+
+        <p style="position: absolute;" id="StandartPlayColors" class="StandartColorO StandartColorX p"></p>
+
+        <div id="IconOColorItem" class="IconOColor-Item">
+
+            <p class="TextChangeColorIconO">Choose your Color</p>
+
+            <button onclick="ChangeColorIconO1()" class="BtnChangeColorIconO">
+                <p id="IconO1" class="ButtonColorO IconX1">O</p>
+            </button>
+            <button onclick="ChangeColorIconO2()" class="BtnChangeColorIconO">
+                <p id="IconO2" class="ButtonColorO IconX2">O</p>
+            </button>
+            <button onclick="ChangeColorIconO3()" class="BtnChangeColorIconO">
+                <p id="IconO3" class="ButtonColorO IconX3">O</p>
+            </button>
+            <button onclick="ChangeColorIconO4()" class="BtnChangeColorIconO">
+                <p id="IconO4" class="ButtonColorO IconX4">O</p>
+            </button>
+            <button onclick="ChangeColorIconO5()" class="BtnChangeColorIconO">
+                <p id="IconO5" class="ButtonColorO IconX5">O</p>
+            </button>
+            <button onclick="ChangeColorIconO6()" class="BtnChangeColorIconO">
+                <p id="IconO6" class="ButtonColorO IconX6">O</p>
+            </button>
+            <button onclick="ChangeColorIconO7()" class="BtnChangeColorIconO">
+                <p id="IconO7" class="ButtonColorO IconX7">O</p>
+            </button>
+            <button onclick="ChangeColorIconO8()" class="BtnChangeColorIconO">
+                <p id="IconO8" class="ButtonColorO IconX8">O</p>
+            </button>
+            <button onclick="ChangeColorIconO9()" class="BtnChangeColorIconO">
+                <p id="IconO9" class="ButtonColorO IconX9">O</p>
+            </button>
+            <button onclick="ChangeColorIconO10()" class="BtnChangeColorIconO">
+                <p id="IconO10" class="ButtonColorO IconX10">O</p>
+            </button>
+
+        </div>
+
+        <button onclick="BacktoGameMenuIconO()" id="BacktoGameMenu" class="BacktoGameMenu">Back</button>
+
+    </div>
+
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+    <!--////////////////////////////////////Scripte/////////////////////////////////////////-->
+    <!--////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <script src="JS/DialogMenu.js"></script>
+    <script src="JS/ChangeBg.js"></script>
+    <script src="JS/DialogWin.js"></script>
+    <script src="JS/DialogChangeIconXO.js"></script>
+    <script src="JS/GamePvP.js"></script>
+    <script src="JS/DialogStart.js"></script>
+
+
+
+</body>
+
+</html>
